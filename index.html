@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Il dogma dell'incarnazione</title>
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- atmosfera: solo gradienti CSS, vignettatura e grana SVG -->
+  <div id="atmo" aria-hidden="true">
+    <div class="par">
+      <div class="drift"></div>
+      <div class="drift2"></div>
+      <div class="tint"></div>
+    </div>
+    <div class="vig"></div>
+    <div class="grain"></div>
+  </div>
+
+  <!-- palco 16:9: il "mondo" contiene la mappa e le sei cornici di sezione -->
+  <main id="stage">
+    <div id="world">
+      <div id="map"></div>
+      <div id="frames"></div>
+    </div>
+  </main>
+
+  <!-- indicatori discreti -->
+  <div id="hud">
+    <button class="mapbtn" id="mapbtn" aria-label="Mappa (M)">
+      <svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><rect x="4" y="10" width="32" height="20" stroke="#D2AE5C" stroke-width="1.4"/><rect x="20" y="14" width="13" height="12" stroke="#D2AE5C" stroke-width="1.2"/><path d="M28 14 V26" stroke="#C2452F" stroke-width="2"/><path d="M4 17 V23" stroke="#C2452F" stroke-width="2.4"/></svg>
+    </button>
+    <button class="mapbtn idxbtn" id="idxbtn" aria-label="Indice delle slide (I)">
+      <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <rect x="7" y="8" width="11" height="8" rx="1.5" stroke="#C9A55A" stroke-width="1.6"/>
+        <rect x="22" y="8" width="11" height="8" rx="1.5" stroke="#C9A55A" stroke-width="1.6"/>
+        <rect x="7" y="22" width="11" height="8" rx="1.5" stroke="#C9A55A" stroke-width="1.6"/>
+        <rect x="22" y="22" width="11" height="8" rx="1.5" stroke="#C9A55A" stroke-width="1.6"/>
+      </svg>
+    </button>
+    <div class="dots" id="dots" aria-hidden="true"></div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
+
